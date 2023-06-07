@@ -1,0 +1,145 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles/main.css?v=201808300902" />
+        <script src="/libs/qimessaging/2/qimessaging.js"></script>
+        <script src="javascripts/polyfill.js"></script>
+        <script>
+        window.addEventListener("error", handleError, true);
+        function handleError(evt) {
+            if (evt.message) { // Chrome sometimes provides this
+                alert("error: "+evt.message +" at linenumber: "+evt.lineno+" of file: "+evt.filename);
+            } else {
+                alert("error: "+evt.type+" from element: "+(evt.srcElement || evt.target));
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <div class="content">
+        <form method="post" autocomplete="off" novalidate>
+            <div class="survey-group">
+
+                <!-- Main screen with explanation & start button -->
+                <div id="start" class="survey-box" data-show-dialog>
+                    <img src="styles/images/saveplanet.png" alt="burning planet" height="180">
+                   
+                    <h1 data-ignore >CLICK TO FIGHT CLIMATE CHANGE!</h1>
+
+                    <h2>SIMPLE & ANONYMOUS button click form of petition</h2>
+
+                    <p>
+                        By signing our petition, it shows your care about our planet.<br>
+                        You'll be adding your voice to the global movement to fight climate change.<br>
+                        This will help us put pressure on governments and businesses to take real action!
+                    </p>
+
+                    <!-- <p>Let's go!Click the globe to START!</p> -->
+                    <button type="button" class="btn-navigate roundBtn globeBtn" id="goBtn" onclick="resetToken();waitRestart(0);" data-next="1">GO</button>
+            
+                </div>
+
+                <!-- Petition page-->
+                <!--Record data onto onboard csv-->
+				<div id="1" class="survey-box" data-show-dialog>
+                    <img src="styles/images/sos.png" alt="earth with sos sign" height="200">
+                    
+                    <h1 data-animated class="hidden">You can click MORE to show STRONGER support! ^run(animations/Stand/Emotions/Positive/Enthusiastic_1)</h1>
+                    <h1>Click to add tokens to sign petition, MORE means STRONGER support!(maximum 3 clicks)</h1>
+
+                    <h3 name="token" id="numToken">1</h3>
+                    <button type="button" class="roundBtn" id="plusBtn">+</button>
+                    <button type="button" class="roundBtn" id="minusBtn">-</button><br><br>
+
+                    <button type="button" class="btn-navigate" id="confirmBtn" onclick="recordResp('token','true');stopRestart();waitRestart(1);" data-next="2">confirm</button>
+                    <button type="button" class="btn-navigate" onclick="recordResp('cancel_1','false');resetToken();stopRestart();" data-next="start">cancel</button>
+                    
+                    <button type="button" class="btn-navigate hidden autoEndBtn" onclick="recordResp('stopped','false')" data-next="start">End</button> 
+                    <!-- endBtn0 -->
+                </div>
+
+                <!-- Progress page and explanation -->
+                <div id="2" class="survey-box" data-show-dialog>
+                    
+                    <h1 data-animated class="hidden">Hooray! One step closer to our goal! ^run(animations/Stand/Emotions/Positive/Happy_2)</h1>
+                    <h1>We are closer to our goal thanks to your support!</h1>
+
+                    <!-- <p>This anonymous petition is also used to reflect general Monash campus student response towards climate change.</p> -->
+
+                    <img src="styles/images/stopchange.png" alt="stop climate change sign" height="240"><br>
+                    <!-- <progress id="pb" value="32" max="100"> 32% </progress> -->
+                    <!-- <label for="pb">Petition progress :</label> -->
+                    
+                    <h3>Petition progress:</h3>
+                
+                    <div class="progress-bar">
+                        <span class="percentage petGoal" id="pb"></span>
+                    </div>
+
+                    <br><br>
+
+                    <button type="button" class="btn-navigate" onclick="stopRestart();waitRestart(2);" data-next="4">Next</button>
+
+                    <button type="button" class="btn-navigate hidden autoEndBtn" data-next="start">End</button>
+                    <!-- endBtn1 -->
+                </div>
+
+                <!-- Further prompt  -->
+                <!-- <div id="3" class="survey-box" data-show-dialog>
+                    <h1 data-animated class="hidden">Are you sure? ^run(animations/Stand/Gestures/Explain_1)</h1>
+                    
+                    <p>
+                        Climate change has the potential to cause widespread and irreversible damage<br>
+                        to our planet and its inhabitants.<br> 
+                        So if you are concerned about the future of our planet, <br>
+                        I urge you to consider signing this petition. 
+                    </p>
+
+                    <img src="styles/images/polarbear.png" alt="polar bear" height="200">
+                
+                    <h3>Return to petition screen?</h3>
+                    <button type="button" class="btn-navigate" onclick="stopRestart();waitRestart(0);" data-next="1">Yes</button>
+                    <button type="button" class="btn-navigate" onclick="recordResp('cancel_2','false');stopRestart();waitRestart(3);" data-next="4">No</button>
+
+                    <button type="button" class="btn-navigate hidden autoEndBtn" data-next="start">End</button>
+    
+                </div> -->
+
+                <!-- Feedback page -->
+				
+                <div id="4" class="survey-box" data-show-dialog>
+                 
+                    <h1 data-animated class="hidden">May I get your feedback? ^run(animations/Stand/Gestures/ShowTablet_1)</h1>
+                    <h1>How do you feel about my approach today?</h1>
+                    
+                    <div class="feedbackBtnGroup">
+                        <button type="button" class="roundBtn emojiBtn btn-navigate" id="angryBtn" onclick="recordResp('fb_1','false');stopRestart();" data-next="5"></button> <!--angry-->
+                        <button type="button" class="roundBtn emojiBtn btn-navigate" id="sadBtn" onclick="recordResp('fb_2','false');stopRestart();" data-next="5"></button><!--upset-->
+                        <button type="button" class="roundBtn emojiBtn btn-navigate" id="neutralBtn" onclick="recordResp('fb_3','false');stopRestart();" data-next="5"></button><!--neutral-->
+                        <button type="button" class="roundBtn emojiBtn btn-navigate" id="smileBtn" onclick="recordResp('fb_4','false');stopRestart();" data-next="5"></button><!--satisfied-->
+                        <button type="button" class="roundBtn emojiBtn btn-navigate" id="happyBtn" onclick="recordResp('fb_5','false');stopRestart();" data-next="5"></button><!--happy-->
+    
+                    </div>
+             
+                    <button type="button" class="btn-navigate hidden autoEndBtn" data-next="start">End</button>
+                    <!-- endBtn2 -->
+                </div>
+
+                <!--Ending page-->
+                <!--Restart flow-->
+                <div id="5" class="survey-box" data-show-dialog>
+                    
+                    <h1 data-animated data-auto-transition class="hidden">Thank you for your time! ^run(animations/Stand/Gestures/Hey_3)</h1>
+                  
+                    <button type="button" class="btn-navigate hidden" data-next="start">Restart</button>
+                </div>
+
+            <div class="popup">
+                <span class="popuptext" id="invalid-popup"><span style="color: red">&#10071;</span> <span id="invalid-message"></span></span>
+            </div>
+        </form>
+        </div>
+
+        <script src="javascripts/main.js?v=201808300902"></script>
+        <script src="javascripts/calc.js"></script>
+    </body>
+</html>

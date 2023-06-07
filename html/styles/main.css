@@ -1,0 +1,201 @@
+@font-face {
+    font-family: Raleway-Bold;
+    src: url(fonts/Raleway-Black.ttf)
+}
+@font-face {
+    font-family: Raleway;
+    src: url(fonts/Raleway-Regular.ttf)
+}
+body {
+    background: #f6f6f6;
+    font-family: Raleway;
+    font-size: 16pt;
+}
+h1 {
+    font-family: Raleway;
+    font-size: 1.8em;
+}
+h2 {
+    font-size: 1.0em;
+}
+
+
+/* survey boxes */
+.content {
+    /* width: 100%;
+    height: 90%; */
+    margin-left: 1%;
+    margin-right: 1%;
+}
+/* .survey-group {
+    display: none;
+}
+.survey-group:first-child {
+    display: block;
+} */
+.survey-box {
+    text-align: center;
+    padding: 1% 0 10px 0;
+    display: none;
+}
+.survey-box.active {
+    display: block;
+}
+.survey-box > p {
+    min-height: 50px;
+}
+.survey-box > .input-box {
+    min-height: 50px;
+}
+.hidden {
+    display: none;
+}
+
+
+/* buttons */
+button {
+    font-size: 24pt;
+    background-color: #022692;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    margin: 4px 2px;
+    opacity: 1;
+    transition: 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    min-width: 200px;
+}
+button:hover {
+    opacity: 0.6;
+}
+
+/* round button design */
+.roundBtn{
+    padding: 10px;
+    min-width: 80px;
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+    background-color: #2fc6b5;
+    border-radius: 50%;
+}
+
+/* globe start button */
+.globeBtn{
+  width: 150px;
+  height: 150px;
+  background-color: #B8D678;
+  font-weight: bold;
+  /* background-image:url('images/earth.png'); */
+}
+
+/* emoji buttons */
+.feedbackBtnGroup{
+  padding: 80px 0;
+  width: 100%;
+}
+
+.emojiBtn{
+  width: 120px;
+  height: 120px;
+  background-color: #f7cc67;
+  background-size: cover;
+  background-position: center center; 
+}
+
+#angryBtn{
+  background-image:url('images/angry.png');
+}
+#sadBtn{
+  background-image:url('images/sad.png');
+}
+#neutralBtn{
+  background-image:url('images/neutral.png');
+}
+#smileBtn{
+  background-image:url('images/smile.png');
+}
+#happyBtn{
+  background-image:url('images/happy.png');
+}
+
+/* Popup container - can be anything you want */
+.popup {
+    text-align: center;
+    margin: 10px;
+}
+/* The actual popup */
+.popuptext {
+    background-color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+    font-size: 12pt;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    border: #000 1px solid;
+    padding: 10px;
+    padding-bottom: 3px;
+    margin: 0 auto;
+    display: none;
+}
+
+[data-display-on] {
+    display: none;
+}
+
+
+/* style for progress bar after petition */
+
+/* .progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    width: 0vw;
+    background: #006000;
+}
+label {
+    margin-right: 15px;
+} */
+
+/* progress bar design */
+.progress-bar {
+  width: 50%;
+  height: 25px;
+  margin-top: 10px;
+  border: 1px solid #9ad678;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #f7cc67;
+  margin: auto;
+}
+
+/* progress bar animation */
+@keyframes progress {
+  from {
+      width: 0;
+  }
+}
+
+.pbAnimation {
+  /* @keyframes duration | easing-function | delay |
+  iteration-count | direction | fill-mode | play-state | name */
+  animation: progress 1500ms ease-in 6000ms 1;
+ }
+
+/* progress bar fill design */
+.percentage {
+  display: block;
+  height: 100%;
+  background-color: #B8D678;
+  border-radius: 5px;
+  /* animation: progress 1500ms ease-in 1; */
+}
+
+/* petition goal percentage */
+.petGoal{
+  width: 40%;
+}
