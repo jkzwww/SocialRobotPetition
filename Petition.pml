@@ -41,6 +41,9 @@
         <File name="data_processor" src="data_processor.py" />
         <File name="517_t0" src="testRawData/517_t0.csv" />
         <File name="codeTest" src="dataRecord/codeTest.csv" />
+        <File name="factory" src="html/factory.png" />
+        <File name="planetStats" src="html/planetStats.png" />
+        <File name="ipccMainPage" src="html/ipccMainPage.png" />
     </Resources>
     <Topics />
     <IgnoredPaths />
