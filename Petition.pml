@@ -44,6 +44,7 @@
         <File name="factory" src="html/factory.png" />
         <File name="planetStats" src="html/planetStats.png" />
         <File name="ipccMainPage" src="html/ipccMainPage.png" />
+        <File name="draftIndex" src="html/draftIndex.html" />
     </Resources>
     <Topics />
     <IgnoredPaths />

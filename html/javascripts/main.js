@@ -672,3 +672,19 @@ function stopRestart()
     console.log(exitID + " page box action detected.\n")
     clearTimeout(myTimeout);
 }
+
+
+// foot in the door
+// start timer when start showing poster
+function startDisplayTimer()
+{
+    posterTimeout = setTimeout(autoNavi, 30000);
+}
+
+const naviBtn = document.querySelector("#naviBtn");
+
+// navigate to petition page
+function autoNavi()
+{    
+    if(naviBtn){naviBtn.click();}
+}

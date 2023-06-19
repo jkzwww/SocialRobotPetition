@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles/main.css?v=201808300902" />
+        <script src="/libs/qimessaging/2/qimessaging.js"></script>
+        <script src="javascripts/polyfill.js"></script>
+        <script>
+        window.addEventListener("error", handleError, true);
+        function handleError(evt) {
+            if (evt.message) { // Chrome sometimes provides this
+                alert("error: "+evt.message +" at linenumber: "+evt.lineno+" of file: "+evt.filename);
+            } else {
+                alert("error: "+evt.type+" from element: "+(evt.srcElement || evt.target));
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <div class="content">
+        <form method="post" autocomplete="off" novalidate>
+            <div class="survey-group">
+
+                <!-- small request screen -->
+                <div id="0" class="survey-box" data-show-dialog>
+
+                    <img src="styles/images/saveplanet.png" alt="burning planet" height="180">
+
+                    <!-- <h1 data-animated class="hidden">Hello there, may I have your attention for a second to read a poster?  ^run(animations/Stand/Emotions/Positive/Enthusiastic_1)</h1> -->
+                    <h1>Can you help check out my poster?</h1>
+                    
+                    <!-- to show poster, start display timer -->
+                    <button type="button" class="btn-navigate" onclick="startDisplayTimer()" data-next="1">Yes</button> 
+                    <!-- end flow for restart -->
+                    <button type="button" class="btn-navigate" onclick="recordResp('cancel_small','false');" data-next="5">No</button>
+    
+                </div>
+
+                <!-- poster page -->
+                <div id="1a" class="survey-box" data-show-dialog>
+
+                    <img src="styles/images/saveplanet.png" alt="burning planet" height="180">
+                    
+                    <!-- auto go to next page after set timer -->
+                    <button type="button" class="btn-navigate hidden" id="naviBtn" data-next="1b">petition</button> 
+                </div>
+
+                <!-- main request-->
+                <!--Record data onto onboard csv-->
+				<div id="1b" class="survey-box" data-show-dialog>
+                    <img src="styles/images/sos.png" alt="earth with sos sign" height="200">
+                    
+                    <h1 data-animated class="hidden">Could you please help me sign this petition to show support? ^run(animations/Stand/Emotions/Positive/Enthusiastic_1)</h1>
+                    
+                    <h1>Click to add tokens to sign petition, MORE means STRONGER support!(maximum 3 clicks)</h1>
+                    <h2>Anonymous with just one step!</h2>
+
+                    <h3 name="token" id="numToken">1</h3>
+                    <button type="button" class="roundBtn" id="plusBtn">+</button>
+                    <button type="button" class="roundBtn" id="minusBtn">-</button><br><br>
+
+                    <button type="button" class="btn-navigate" id="confirmBtn" onclick="recordResp('token','true');waitRestart(0);" data-next="2">confirm</button>
+                    <button type="button" class="btn-navigate" onclick="recordResp('cancel_big','false');resetToken();" data-next="5">cancel</button>
+                    
+                </div>
+
+                <!-- Progress page and explanation -->
+                <div id="2" class="survey-box" data-show-dialog>
+                    
+                    <h1 data-animated class="hidden">Hooray! One step closer to our goal! ^run(animations/Stand/Emotions/Positive/Happy_2)</h1>
+                    <h1>We are closer to our goal thanks to your support!</h1>
+
+                    <!-- <p>This anonymous petition is also used to reflect general Monash campus student response towards climate change.</p> -->
+
+                    <img src="styles/images/stopchange.png" alt="stop climate change sign" height="240"><br>
+                    <!-- <progress id="pb" value="32" max="100"> 32% </progress> -->
+                    <!-- <label for="pb">Petition progress :</label> -->
+                    
+                    <h3>Petition progress:</h3>
+                
+                    <div class="progress-bar">
+                        <span class="percentage petGoal" id="pb"></span>
+                    </div>
+
+                    <br><br>
+
+                    <button type="button" class="btn-navigate" onclick="stopRestart();waitRestart(1);" data-next="4">Next</button>
+
+                    <button type="button" class="btn-navigate hidden autoEndBtn" data-next="0">End</button>
+                    <!-- endBtn0 -->
+                </div>
+
+                <!-- Feedback page -->
+				
+                <div id="4" class="survey-box" data-show-dialog>
+                 
+                    <h1 data-animated class="hidden">May I get your feedback? ^run(animations/Stand/Gestures/ShowTablet_1)</h1>
+                    <h1>How do you feel about my approach today?</h1>
+                    
+                    <div class="feedbackBtnGroup">
+                        <button type="button" class="roundBtn emojiBtn btn-navigate" id="angryBtn" onclick="recordResp('fb_1','false');stopRestart();" data-next="5"></button> <!--angry-->
+                        <button type="button" class="roundBtn emojiBtn btn-navigate" id="sadBtn" onclick="recordResp('fb_2','false');stopRestart();" data-next="5"></button><!--upset-->
+                        <button type="button" class="roundBtn emojiBtn btn-navigate" id="neutralBtn" onclick="recordResp('fb_3','false');stopRestart();" data-next="5"></button><!--neutral-->
+                        <button type="button" class="roundBtn emojiBtn btn-navigate" id="smileBtn" onclick="recordResp('fb_4','false');stopRestart();" data-next="5"></button><!--satisfied-->
+                        <button type="button" class="roundBtn emojiBtn btn-navigate" id="happyBtn" onclick="recordResp('fb_5','false');stopRestart();" data-next="5"></button><!--happy-->
+    
+                    </div>
+             
+                    <button type="button" class="btn-navigate hidden autoEndBtn" data-next="0">End</button>
+                    <!-- endBtn1 -->
+                </div>
+
+                <!--Ending page-->
+                <!--Restart flow-->
+                <div id="5" class="survey-box" data-show-dialog>
+                    
+                    <h1 data-animated data-auto-transition class="hidden">Thank you for your time! ^run(animations/Stand/Gestures/Hey_3)</h1>
+                  
+                    <button type="button" class="btn-navigate hidden" data-next="0">Restart</button>
+                </div>
+
+            <div class="popup">
+                <span class="popuptext" id="invalid-popup"><span style="color: red">&#10071;</span> <span id="invalid-message"></span></span>
+            </div>
+        </form>
+        </div>
+
+        <script src="javascripts/main.js?v=201808300902"></script>
+        <script src="javascripts/calc.js"></script>
+    </body>
+</html>

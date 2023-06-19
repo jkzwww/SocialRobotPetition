@@ -276,7 +276,7 @@ but even I know our planet is suffering from human activities!</translation>
             <translation type="vanished">Hello</translation>
         </message>
         <message>
-            <location filename="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../Program Files (x86)/Softbank Robotics/Choregraphe Suite 2.5/translations/behavior_1/behavior.xar" line="0"/>
+            <location filename="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../Program Files (x86)/Softbank Robotics/Choregraphe Suite 2.5/translations/behavior_1/behavior.xar" line="0"/>
             <source></source>
             <comment>Text</comment>
             <translation></translation>
@@ -297,6 +297,20 @@ but even I know our planet is suffering from human activities!</translation>
         </message>
     </context>
     <context>
+        <name>consistency/behavior.xar:/Animated Say</name>
+        <message>
+            <source>Hello</source>
+            <comment>Text</comment>
+            <translation type="vanished">Hello</translation>
+        </message>
+        <message>
+            <location filename="consistency/behavior.xar" line="0"/>
+            <source>Hello there, may I have your attention for a second to read a poster?</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Hello there, may I have your attention for a second to read a poster?</translation>
+        </message>
+    </context>
+    <context>
         <name>consistency/behavior.xar:/Say</name>
         <message>
             <source>Hello there, may I have your attention for five seconds? 
@@ -306,11 +320,10 @@ but even I know our planet is suffering from human activities!</translation>
 </translation>
         </message>
         <message>
-            <location filename="consistency/behavior.xar" line="0"/>
             <source>Hello there, may I have your attention for a second to read about our petition? 
 </source>
             <comment>Text</comment>
-            <translation type="unfinished">Hello there, may I have your attention for a second to read about our petition? 
+            <translation type="obsolete">Hello there, may I have your attention for a second to read about our petition? 
 </translation>
         </message>
     </context>
@@ -322,11 +335,10 @@ but even I know our planet is suffering from human activities!</translation>
             <translation type="obsolete">Thank you so much!</translation>
         </message>
         <message>
-            <location filename="consistency/behavior.xar" line="0"/>
             <source>As you can see, the world is warming dangerously and society needs pressure for change!
 </source>
             <comment>Text</comment>
-            <translation type="unfinished">As you can see, the world is warming dangerously and society needs pressure for change!
+            <translation type="obsolete">As you can see, the world is warming dangerously and society needs pressure for change!
 </translation>
         </message>
     </context>
@@ -340,10 +352,9 @@ but even I know our planet is suffering from human activities!</translation>
 </translation>
         </message>
         <message>
-            <location filename="consistency/behavior.xar" line="0"/>
             <source>Could you please help me sign this petition to show support?</source>
             <comment>Text</comment>
-            <translation type="unfinished">Could you please help me sign this petition to show support?</translation>
+            <translation type="obsolete">Could you please help me sign this petition to show support?</translation>
         </message>
     </context>
     <context>
@@ -467,10 +478,15 @@ such as IPCC, are telling us how urgent it is to fight climate change,</translat
             <translation type="obsolete">We will amplify your voice, through this petition!</translation>
         </message>
         <message>
-            <location filename="creditability/behavior.xar" line="0"/>
             <source>We will amplify your voice through this petition!</source>
             <comment>Text</comment>
-            <translation type="unfinished">We will amplify your voice through this petition!</translation>
+            <translation type="obsolete">We will amplify your voice through this petition!</translation>
+        </message>
+        <message>
+            <location filename="creditability/behavior.xar" line="0"/>
+            <source>Let us amplify your voice through this petition!</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Let us amplify your voice through this petition!</translation>
         </message>
     </context>
     <context>
@@ -486,6 +502,24 @@ such as IPCC, are telling us how urgent it is to fight climate change,</translat
             <translation type="obsolete">Hello there, may I have your support to fight climate change through this petition?</translation>
         </message>
         <message>
+            <source>Hello there, may I have your support to fight climate change through a petition?</source>
+            <comment>Text</comment>
+            <translation type="obsolete">Hello there, may I have your support to fight climate change through a petition?</translation>
+        </message>
+    </context>
+    <context>
+        <name>freedom/behavior.xar:/Animated Say (1)</name>
+        <message>
+            <source>Of course, feel free to say no.
+</source>
+            <comment>Text</comment>
+            <translation type="obsolete">Of course, feel free to say no.
+</translation>
+        </message>
+    </context>
+    <context>
+        <name>freedom/behavior.xar:/Animated Say (2)</name>
+        <message>
             <location filename="freedom/behavior.xar" line="0"/>
             <source>Hello there, may I have your support to fight climate change through a petition?</source>
             <comment>Text</comment>
@@ -493,7 +527,7 @@ such as IPCC, are telling us how urgent it is to fight climate change,</translat
         </message>
     </context>
     <context>
-        <name>freedom/behavior.xar:/Animated Say (1)</name>
+        <name>freedom/behavior.xar:/Animated Say (3)</name>
         <message>
             <location filename="freedom/behavior.xar" line="0"/>
             <source>Of course, feel free to say no.
@@ -510,6 +544,14 @@ such as IPCC, are telling us how urgent it is to fight climate change,</translat
 </source>
             <comment>Text</comment>
             <translation type="obsolete">Hello there, may I have your support to fight climate change through this petition?
+</translation>
+        </message>
+        <message>
+            <location filename="freedom/behavior.xar" line="0"/>
+            <source>It is anonymous, and just takes a moment!
+</source>
+            <comment>Text</comment>
+            <translation type="unfinished">It is anonymous, and just takes a moment!
 </translation>
         </message>
     </context>
@@ -530,11 +572,10 @@ such as IPCC, are telling us how urgent it is to fight climate change,</translat
 </translation>
         </message>
         <message>
-            <location filename="freedom/behavior.xar" line="0"/>
             <source>It is anonymous, and just takes a moment!
 </source>
             <comment>Text</comment>
-            <translation type="unfinished">It is anonymous, and just takes a moment!
+            <translation type="obsolete">It is anonymous, and just takes a moment!
 </translation>
         </message>
     </context>
