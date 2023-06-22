@@ -39,12 +39,18 @@
         <File name="stopchange" src="html/styles/images/stopchange.png" />
         <File name="testing" src="testing.js" />
         <File name="data_processor" src="data_processor.py" />
-        <File name="517_t0" src="testRawData/517_t0.csv" />
-        <File name="codeTest" src="dataRecord/codeTest.csv" />
         <File name="factory" src="html/factory.png" />
         <File name="planetStats" src="html/planetStats.png" />
         <File name="ipccMainPage" src="html/ipccMainPage.png" />
         <File name="draftIndex" src="html/draftIndex.html" />
+        <File name="respList" src="dataRecord/respList.csv" />
+        <File name="respSum" src="dataRecord/respSum.csv" />
+        <File name="CCposter" src="html/CCposter.jpg" />
+        <File name="sum_processor" src="sum_processor.py" />
+        <File name="2023-05-25_03_32" src="testRawData/2023-05-25_03_32.csv" />
+        <File name="2023-05-25_03_39" src="testRawData/2023-05-25_03_39.csv" />
+        <File name="2023-05-25_04_35" src="testRawData/2023-05-25_04_35.csv" />
+        <File name="2023-06-01_02_56" src="testRawData/2023-06-01_02_56.csv" />
     </Resources>
     <Topics />
     <IgnoredPaths />
