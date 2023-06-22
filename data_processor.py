@@ -61,11 +61,13 @@ for file_idx in range(len(data_dirs)):
                 testDate = dataWord
                 resp_list.append([testDate])
                 continue
+            elif(dataWord == ""): #empty col
+                continue    
 
             # participant id
-            temp_resp.append(resp_id)
             resp_id += 1;
-
+            temp_resp.append(resp_id)
+            
             # check actions
             if(dataWord == "stopped"):
                 temp_resp.append(dataWord)

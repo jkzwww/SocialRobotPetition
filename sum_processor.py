@@ -209,9 +209,9 @@ for file_idx in range(len(data_dirs)):
                     else:
                         print("invalid feedback!\n")
                 
-        # record data of the row
-        # outputData = [testDate,totalSign,sumToken_1,sumToken_2,sumToken_3,totalRejection,totalStops,sumFb_1,sumFb_2,sumFb_3,sumFb_4,sumFb_5,sumReToken_1,sumReToken_2,sumReToken_3]
-        outputData = [testDate,totalSign,sumToken_1,sumToken_2,sumToken_3,totalRejection,totalStops,sumFb_1,sumFb_2,sumFb_3,sumFb_4,sumFb_5]
-        with open(storage_path, 'a', newline='') as store_file:
-            writer = csv.writer(store_file)
-            writer.writerow(outputData)
+    # record data of the file
+    # outputData = [testDate,totalSign,sumToken_1,sumToken_2,sumToken_3,totalRejection,totalStops,sumFb_1,sumFb_2,sumFb_3,sumFb_4,sumFb_5,sumReToken_1,sumReToken_2,sumReToken_3]
+    outputData = [testDate,totalSign,sumToken_1,sumToken_2,sumToken_3,totalRejection,totalStops,sumFb_1,sumFb_2,sumFb_3,sumFb_4,sumFb_5]
+    with open(storage_path, 'a', newline='') as store_file:
+        writer = csv.writer(store_file)
+        writer.writerow(outputData)
