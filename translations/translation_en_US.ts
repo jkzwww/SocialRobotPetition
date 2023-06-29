@@ -166,10 +166,14 @@ such as IPCC, are telling us how urgent it is to fight climate change,</source>
 such as IPCC, are telling us how urgent it is to fight climate change,</translation>
         </message>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
             <source> Hello there, may I have a moment with you? </source>
             <comment>Text</comment>
-            <translation type="unfinished"> Hello there, may I have a moment with you? </translation>
+            <translation type="obsolete"> Hello there, may I have a moment with you? </translation>
+        </message>
+        <message>
+            <source>Have you heard about climate change issues from anyone around you?</source>
+            <comment>Text</comment>
+            <translation type="obsolete">Have you heard about climate change issues from anyone around you?</translation>
         </message>
     </context>
     <context>
@@ -306,10 +310,37 @@ such as IPCC, are telling us how urgent it is to fight climate change,</translat
             <translation type="vanished">Hello</translation>
         </message>
         <message>
-            <location filename="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../Program Files (x86)/Softbank Robotics/Choregraphe Suite 2.5/translations/behavior_1/behavior.xar" line="0"/>
+            <location filename="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../Program Files (x86)/Softbank Robotics/Choregraphe Suite 2.5/translations/behavior_1/behavior.xar" line="0"/>
             <source></source>
             <comment>Text</comment>
             <translation></translation>
+        </message>
+    </context>
+    <context>
+        <name>behavior_1/behavior.xar:/Source Inquiry</name>
+        <message>
+            <source>Have you heard about climate change issues from anyone around you?</source>
+            <comment>Text</comment>
+            <translation type="obsolete">Have you heard about climate change issues from anyone around you?</translation>
+        </message>
+    </context>
+    <context>
+        <name>behavior_1/behavior.xar:/Task Inquiry</name>
+        <message>
+            <source>Do you think you would engage in action that addresses climate change?</source>
+            <comment>Text</comment>
+            <translation type="obsolete">Do you think you would engage in action that addresses climate change?</translation>
+        </message>
+        <message>
+            <source>Do you think you would engage in action, that fights climate change?</source>
+            <comment>Text</comment>
+            <translation type="obsolete">Do you think you would engage in action, that fights climate change?</translation>
+        </message>
+        <message>
+            <location filename="behavior_1/behavior.xar" line="0"/>
+            <source>Do you think you would engage in action, that addresses climate change?</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Do you think you would engage in action, that addresses climate change?</translation>
         </message>
     </context>
     <context>
@@ -338,6 +369,14 @@ such as IPCC, are telling us how urgent it is to fight climate change,</translat
             <comment>Text</comment>
             <translation type="obsolete">Hello there, may I have your attention for a second to read a poster?</translation>
         </message>
+        <message>
+            <source> Hello there, may I have a moment with you? </source>
+            <comment>Text</comment>
+            <translation type="obsolete"> Hello there, may I have a moment with you? </translation>
+        </message>
+    </context>
+    <context>
+        <name>consistency/behavior.xar:/Animated Say (1)</name>
         <message>
             <location filename="consistency/behavior.xar" line="0"/>
             <source> Hello there, may I have a moment with you? </source>
@@ -629,6 +668,24 @@ Of course, feel free to say no!</translation>
             <comment>Text</comment>
             <translation type="obsolete">Of course, feel free to say no.
 </translation>
+        </message>
+    </context>
+    <context>
+        <name>inquiry/behavior.xar:/Source Inquiry</name>
+        <message>
+            <location filename="inquiry/behavior.xar" line="0"/>
+            <source>Have you heard about climate change issues from anyone around you?</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Have you heard about climate change issues from anyone around you?</translation>
+        </message>
+    </context>
+    <context>
+        <name>inquiry/behavior.xar:/Task Inquiry</name>
+        <message>
+            <location filename="inquiry/behavior.xar" line="0"/>
+            <source>Do you think you would engage in action, that addresses climate change?</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Do you think you would engage in action, that addresses climate change?</translation>
         </message>
     </context>
     <context>

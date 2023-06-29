@@ -38,17 +38,60 @@
                 </div> -->
 
 
-                <!-- small request screen -->
-                <div id="start" class="survey-box request-box" data-show-dialog>
+                <!-- small request screen (consistency) -->
+                <!-- <div id="start" class="survey-box request-box" data-show-dialog>
                     <img src="styles/images/smiley.png" alt="smiley face" height="200">
 
                     <h1 data-ignore >May I have a moment with you?</h1>
                     <br>
-                     <!-- Proceed to request petition -->
+                
                     <button type="button" class="btn-navigate yesBtn" onclick="recordResp('small_agree','false');resetToken();waitRestart(0);" data-next="1">Yes</button> 
-                    <!-- end flow for restart -->
                     <button type="button" class="btn-navigate noBtn" onclick="recordResp('small_disagree','false');" data-next="5">No</button>
     
+                </div> -->
+
+                <!-- inquiry screen (task & source-related) -->
+                <div id="start" class="survey-box request-box" data-show-dialog>
+                    <img src="styles/images/smiley.png" alt="smiley face" height="100">
+
+                    <!-- source-related -->
+                    <!-- <h1 data-ignore >Have you heard about climate change issues from anyone around you?</h1> -->
+                    <!-- task-related -->
+                    <h1 data-ignore >Do you think you would engage in action that addresses climate change?</h1>
+                    <br>
+                
+                    <button type="button" class="btn-navigate yesBtn" onclick="recordResp('ans_yes','false');" data-next="1a">Yes</button> 
+                    <button type="button" class="btn-navigate noBtn" onclick="recordResp('ans_no','false');" data-next="1b">No</button>
+    
+                </div>
+
+                <!-- yes response for inquiry -->
+                <div id="1a" class="survey-box request-box">
+                   
+                    <!-- <h1 data-animated data-auto-transition class="hidden">We are so proud of you having awareness of the planet's issue! ^run(animations/Stand/Gestures/Enthusiastic_3)</h1> -->
+                  
+                    <h1 data-animated data-auto-transition class="hidden">I am so proud of you caring for our planet! ^run(animations/Stand/Gestures/Enthusiastic_3)</h1>
+                  
+                    <img src="styles/images/saveplanet.png" alt="burning planet" height="180">
+
+                    <button type="button" class="btn-navigate hidden" onclick="waitRestart(0);resetToken();" data-next="1"></button>
+               
+                </div>
+
+                <!-- no response for inquiry -->
+                 <div id="1b" class="survey-box request-box">
+                   
+                    <!-- <h1 data-animated data-auto-transition class="hidden"> It is okay, let me tell you a little bit more about it.
+                        Climate change is an urgent global issue that affects everyone, such as rising sea levels and endangered species! 
+                        ^run(animations/Stand/Gestures/Explain_11)</h1> -->
+
+                    <h1 data-animated data-auto-transition class="hidden">It is okay , can i still interest you in a simple climate change petition?
+                        ^run(animations/Stand/Gestures/Explain_11)</h1>
+
+                    <img src="styles/images/saveplanet.png" alt="burning planet" height="180">
+                    
+                    <button type="button" class="btn-navigate hidden" onclick="waitRestart(0);resetToken();" data-next="1"></button>
+               
                 </div>
 
                 <!-- Petition page-->
@@ -60,7 +103,7 @@
                     <!-- <h1 data-animated class="hidden">You can click MORE to show STRONGER support! ^run(animations/Stand/Emotions/Positive/Enthusiastic_1)</h1>
                     <h2>Click to add tokens to sign petition, MORE means STRONGER support!(maximum 3 clicks)</h2>  -->
                     
-                    <!--  consistency -->
+                    <!--  consistency & inquiry -->
                     <h1 data-animated class="hidden">Could you please help me sign this petition to show support? ^run(animations/Stand/Emotions/Positive/Enthusiastic_1)</h1>
                     <h3>By signing our petition, it shows your care about our planet.<br>
                         You'll be adding your voice to the global movement to fight climate change.</h3>
