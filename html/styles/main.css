@@ -51,6 +51,14 @@ h2 {
     display: none;
 }
 
+.request-box{
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin: 0;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 
 /* buttons */
 button {
@@ -90,6 +98,14 @@ button:hover {
   background-color: #B8D678;
   font-weight: bold;
   /* background-image:url('images/earth.png'); */
+}
+
+/* yes/no choices */
+.yesBtn{
+  background-color: #7bc780;
+}
+.noBtn{
+  background-color: #c7817b;
 }
 
 /* emoji buttons */

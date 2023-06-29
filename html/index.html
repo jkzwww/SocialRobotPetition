@@ -20,7 +20,7 @@
             <div class="survey-group">
 
                 <!-- Main screen with explanation & start button -->
-                <div id="start" class="survey-box" data-show-dialog>
+                <!-- <div id="start" class="survey-box" data-show-dialog>
                     <img src="styles/images/saveplanet.png" alt="burning planet" height="180">
                    
                     <h1 data-ignore >CLICK TO FIGHT CLIMATE CHANGE!</h1>
@@ -33,20 +33,40 @@
                         This will help us put pressure on governments and businesses to take real action!
                     </p>
 
-                    <!-- <p>Let's go!Click the globe to START!</p> -->
                     <button type="button" class="btn-navigate roundBtn globeBtn" id="goBtn" onclick="resetToken();waitRestart(0);" data-next="1">GO</button>
             
+                </div> -->
+
+
+                <!-- small request screen -->
+                <div id="start" class="survey-box request-box" data-show-dialog>
+                    <img src="styles/images/smiley.png" alt="smiley face" height="200">
+
+                    <h1 data-ignore >May I have a moment with you?</h1>
+                    <br>
+                     <!-- Proceed to request petition -->
+                    <button type="button" class="btn-navigate yesBtn" onclick="recordResp('small_agree','false');resetToken();waitRestart(0);" data-next="1">Yes</button> 
+                    <!-- end flow for restart -->
+                    <button type="button" class="btn-navigate noBtn" onclick="recordResp('small_disagree','false');" data-next="5">No</button>
+    
                 </div>
 
                 <!-- Petition page-->
                 <!--Record data onto onboard csv-->
 				<div id="1" class="survey-box" data-show-dialog>
-                    <img src="styles/images/sos.png" alt="earth with sos sign" height="200">
+                    <img src="styles/images/sos.png" alt="earth with sos sign" height="150">
                     
-                    <h1 data-animated class="hidden">You can click MORE to show STRONGER support! ^run(animations/Stand/Emotions/Positive/Enthusiastic_1)</h1>
-                    <h1>Click to add tokens to sign petition, MORE means STRONGER support!(maximum 3 clicks)</h1>
+                    <!-- general -->
+                    <!-- <h1 data-animated class="hidden">You can click MORE to show STRONGER support! ^run(animations/Stand/Emotions/Positive/Enthusiastic_1)</h1>
+                    <h2>Click to add tokens to sign petition, MORE means STRONGER support!(maximum 3 clicks)</h2>  -->
+                    
+                    <!--  consistency -->
+                    <h1 data-animated class="hidden">Could you please help me sign this petition to show support? ^run(animations/Stand/Emotions/Positive/Enthusiastic_1)</h1>
+                    <h3>By signing our petition, it shows your care about our planet.<br>
+                        You'll be adding your voice to the global movement to fight climate change.</h3>
+                    <p>Click to add tokens to sign petition, MORE means STRONGER support!</p>
 
-                    <h3 name="token" id="numToken">1</h3>
+                    <h2 name="token" id="numToken">1</h2>
                     <button type="button" class="roundBtn" id="plusBtn">+</button>
                     <button type="button" class="roundBtn" id="minusBtn">-</button><br><br>
 

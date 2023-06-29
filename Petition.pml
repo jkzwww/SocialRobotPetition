@@ -47,10 +47,10 @@
         <File name="respSum" src="dataRecord/respSum.csv" />
         <File name="CCposter" src="html/CCposter.jpg" />
         <File name="sum_processor" src="sum_processor.py" />
-        <File name="2023-05-25_03_32" src="testRawData/2023-05-25_03_32.csv" />
-        <File name="2023-05-25_03_39" src="testRawData/2023-05-25_03_39.csv" />
-        <File name="2023-05-25_04_35" src="testRawData/2023-05-25_04_35.csv" />
-        <File name="2023-06-01_02_56" src="testRawData/2023-06-01_02_56.csv" />
+        <File name="t1_0525_admonishment" src="testRawData/t1_0525_admonishment.csv" />
+        <File name="t2_0601_logical" src="testRawData/t2_0601_logical.csv" />
+        <File name="t3_0622_creditability" src="testRawData/t3_0622_creditability.csv" />
+        <File name="smiley" src="html/styles/images/smiley.png" />
     </Resources>
     <Topics />
     <IgnoredPaths />
