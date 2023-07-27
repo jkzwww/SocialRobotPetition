@@ -44,13 +44,13 @@
         <File name="ipccMainPage" src="html/ipccMainPage.png" />
         <File name="draftIndex" src="html/draftIndex.html" />
         <File name="respList" src="dataRecord/respList.csv" />
-        <File name="respSum" src="dataRecord/respSum.csv" />
         <File name="CCposter" src="html/CCposter.jpg" />
         <File name="sum_processor" src="sum_processor.py" />
         <File name="t1_0525_admonishment" src="testRawData/t1_0525_admonishment.csv" />
         <File name="t2_0601_logical" src="testRawData/t2_0601_logical.csv" />
         <File name="t3_0622_creditability" src="testRawData/t3_0622_creditability.csv" />
         <File name="smiley" src="html/styles/images/smiley.png" />
+        <File name="t4_0724_freedom" src="testRawData/t4_0724_freedom.csv" />
     </Resources>
     <Topics />
     <IgnoredPaths />

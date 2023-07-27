@@ -4,6 +4,7 @@ import sys
 
 # operation variables
 skipNextIter = False;
+sameResp = False;
 
 # storage file for participant response list
 storage_path = 'dataRecord/respList.csv'
@@ -47,7 +48,8 @@ for file_idx in range(len(data_dirs)):
         for col in range(len(row)):
 
             # temporary response storage
-            temp_resp = []
+            if(sameResp == False):
+                temp_resp = []
             # current data (action)
             dataWord = row[col]
             # split action for classfication
@@ -88,9 +90,24 @@ for file_idx in range(len(data_dirs)):
 
                 elif(dataType == "cancel"): #reject
                     temp_resp.append(dataWord)
-            
+
+                elif(dataType == "small"): #foot-in-the-door
+
+                    if(dataParts[1] == "agree"):
+                        sameResp == True;
+                    
+                    temp_resp.append(dataWord)
+                
+                elif(dataType == "ans"):
+                    temp_resp.append(dataWord)
+
+                    
+
+
             # record interaction
             resp_list.append(temp_resp)
+
+            if(sameResp==True):sameResp == False; #reset
 
     with open(storage_path, 'a', newline='') as store_file:
         writer = csv.writer(store_file)
