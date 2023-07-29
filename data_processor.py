@@ -18,17 +18,19 @@ def read_csv_file(file_path):
             data.append(row)
     return data
 
-# data storage path
+# data storage folder path
 data_path = 'testRawData'
 # data directories
 data_dirs = os.listdir(data_path)
 
-# data files from pepper
+# data files from pepper example
 # file_path = 'testRawData/2023-06-01_02_56.csv'
 
 for file_idx in range(len(data_dirs)):
 
     file_path = os.path.join(data_path,data_dirs[file_idx]) 
+    file_name = data_dirs[file_idx]
+    trial_name = file_name.split('_')[-1]
 
     # check data file exists
     if (os.path.exists(file_path) == 0):
@@ -50,6 +52,10 @@ for file_idx in range(len(data_dirs)):
             # temporary response storage
             if(sameResp == False):
                 temp_resp = []
+                # participant id
+                resp_id += 1;
+                temp_resp.append(resp_id)
+
             # current data (action)
             dataWord = row[col]
             # split action for classfication
@@ -61,14 +67,12 @@ for file_idx in range(len(data_dirs)):
                 continue
             elif(col == 0): #check date
                 testDate = dataWord
-                resp_list.append([testDate])
+                resp_list.append([testDate,trial_name])
                 continue
             elif(dataWord == ""): #empty col
                 continue    
 
-            # participant id
-            resp_id += 1;
-            temp_resp.append(resp_id)
+            
             
             # check actions
             if(dataWord == "stopped"):
@@ -94,20 +98,23 @@ for file_idx in range(len(data_dirs)):
                 elif(dataType == "small"): #foot-in-the-door
 
                     if(dataParts[1] == "agree"):
-                        sameResp == True;
+                        sameResp = True;
                     
                     temp_resp.append(dataWord)
                 
                 elif(dataType == "ans"):
                     temp_resp.append(dataWord)
+                    sameResp = True;
 
                     
-
+            if(sameResp == True & ((dataParts[0] == "small" or dataParts[0] == "ans")== False) ):
+                sameResp = False
 
             # record interaction
-            resp_list.append(temp_resp)
+            if(sameResp == False):
+                resp_list.append(temp_resp)
 
-            if(sameResp==True):sameResp == False; #reset
+            
 
     with open(storage_path, 'a', newline='') as store_file:
         writer = csv.writer(store_file)
