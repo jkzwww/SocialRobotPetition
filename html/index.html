@@ -46,10 +46,16 @@
                     <br>
                 
                     <button type="button" class="btn-navigate yesBtn" onclick="recordResp('small_agree','false');resetToken();waitRestart(0);" data-next="1">Yes</button> 
-                    <button type="button" class="btn-navigate noBtn" onclick="recordResp('small_disagree','false');" data-next="5">No</button>
+                    <button type="button" class="btn-navigate noBtn" onclick="recordResp('small_disagree','false');" data-next="1c">No</button>
     
                 </div>
 
+                <div id="1c" class="survey-box" data-show-dialog>
+                    
+                    <h1 data-animated data-auto-transition class="hidden">Alright, thank you!^run(animations/Stand/Gestures/Hey_3)</h1>
+                  
+                    <button type="button" class="btn-navigate hidden" data-next="start">Restart</button>
+                </div>
                 <!-- inquiry screen (task & source-related) -->
                 <!-- <div id="start" class="survey-box request-box" data-show-dialog>
                     <img src="styles/images/smiley.png" alt="smiley face" height="100"> -->
