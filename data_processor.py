@@ -42,13 +42,23 @@ for file_idx in range(len(data_dirs)):
     # list of responses
     resp_list = []
     resp_id = 0
-
+    sameResp = False;
     # read data
-
     for row in data:
 
         for col in range(len(row)):
 
+            # skipping current iter
+            if(skipNextIter == True): # check if recorded
+                skipNextIter = False
+                continue
+            elif(row[col] == ""): #empty col
+                continue    
+            elif(col == 0): #check date
+                testDate = row[col]
+                resp_list.append([testDate,trial_name])
+                continue
+            
             # temporary response storage
             if(sameResp == False):
                 temp_resp = []
@@ -61,16 +71,6 @@ for file_idx in range(len(data_dirs)):
             # split action for classfication
             dataParts = dataWord.split('_')
 
-            # skipping current iter
-            if(skipNextIter == True): # check if recorded
-                skipNextIter = False
-                continue
-            elif(col == 0): #check date
-                testDate = dataWord
-                resp_list.append([testDate,trial_name])
-                continue
-            elif(dataWord == ""): #empty col
-                continue    
 
             
             
