@@ -51,6 +51,7 @@
         <File name="t3_0622_creditability" src="testRawData/t3_0622_creditability.csv" />
         <File name="smiley" src="html/styles/images/smiley.png" />
         <File name="t4_0724_freedom" src="testRawData/t4_0724_freedom.csv" />
+        <File name="t5_0728_consistency" src="testRawData/t5_0728_consistency.csv" />
     </Resources>
     <Topics />
     <IgnoredPaths />

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<package uuid="survey-fe0cac" version="0.1.0">
+<package version="0.1.0" uuid="survey-fe0cac">
  <names>
   <name lang="en_US">Petition</name>
  </names>
@@ -20,7 +20,7 @@
   </behaviorContent>
  </contents>
  <requirements>
-  <naoqiRequirement maxVersion="2.5" minVersion="2.5"/>
+  <naoqiRequirement minVersion="2.5" maxVersion="2.5"/>
   <robotRequirement model="JULIETTE"/>
  </requirements>
 </package>
