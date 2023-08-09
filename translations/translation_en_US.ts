@@ -166,15 +166,20 @@ such as IPCC, are telling us how urgent it is to fight climate change,</source>
 such as IPCC, are telling us how urgent it is to fight climate change,</translation>
         </message>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
             <source> Hello there, may I have a moment with you? </source>
             <comment>Text</comment>
-            <translation type="unfinished"> Hello there, may I have a moment with you? </translation>
+            <translation type="obsolete"> Hello there, may I have a moment with you? </translation>
         </message>
         <message>
             <source>Have you heard about climate change issues from anyone around you?</source>
             <comment>Text</comment>
             <translation type="obsolete">Have you heard about climate change issues from anyone around you?</translation>
+        </message>
+        <message>
+            <location filename="behavior_1/behavior.xar" line="0"/>
+            <source>Hello there</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Hello there</translation>
         </message>
     </context>
     <context>
@@ -248,11 +253,10 @@ such as IPCC, are telling us how urgent it is to fight climate change,</translat
 </translation>
         </message>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
             <source>It is anonymous, and just takes a moment!
 </source>
             <comment>Text</comment>
-            <translation type="unfinished">It is anonymous, and just takes a moment!
+            <translation type="obsolete">It is anonymous, and just takes a moment!
 </translation>
         </message>
         <message>
@@ -312,7 +316,7 @@ such as IPCC, are telling us how urgent it is to fight climate change,</translat
             <translation type="vanished">Hello</translation>
         </message>
         <message>
-            <location filename="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../Program Files (x86)/Softbank Robotics/Choregraphe Suite 2.5/translations/behavior_1/behavior.xar" line="0"/>
+            <location filename="../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../../Program Files (x86)/Softbank Robotics/Choregraphe Suite 2.5/translations/behavior_1/behavior.xar" line="0"/>
             <source></source>
             <comment>Text</comment>
             <translation></translation>
@@ -339,9 +343,10 @@ such as IPCC, are telling us how urgent it is to fight climate change,</translat
             <translation type="obsolete">Do you think you would engage in action, that fights climate change?</translation>
         </message>
         <message>
+            <location filename="behavior_1/behavior.xar" line="0"/>
             <source>Do you think you would engage in action, that addresses climate change?</source>
             <comment>Text</comment>
-            <translation type="obsolete">Do you think you would engage in action, that addresses climate change?</translation>
+            <translation type="unfinished">Do you think you would engage in action, that addresses climate change?</translation>
         </message>
     </context>
     <context>
@@ -371,18 +376,18 @@ such as IPCC, are telling us how urgent it is to fight climate change,</translat
             <translation type="obsolete">Hello there, may I have your attention for a second to read a poster?</translation>
         </message>
         <message>
+            <location filename="consistency/behavior.xar" line="0"/>
             <source> Hello there, may I have a moment with you? </source>
             <comment>Text</comment>
-            <translation type="obsolete"> Hello there, may I have a moment with you? </translation>
+            <translation type="unfinished"> Hello there, may I have a moment with you? </translation>
         </message>
     </context>
     <context>
         <name>consistency/behavior.xar:/Animated Say (1)</name>
         <message>
-            <location filename="consistency/behavior.xar" line="0"/>
             <source> Hello there, may I have a moment with you? </source>
             <comment>Text</comment>
-            <translation type="unfinished"> Hello there, may I have a moment with you? </translation>
+            <translation type="obsolete"> Hello there, may I have a moment with you? </translation>
         </message>
     </context>
     <context>
