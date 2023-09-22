@@ -4,12 +4,11 @@
     <BehaviorDescriptions>
         <BehaviorDescription name="behavior" src="behavior_1" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="admonishment" xar="behavior.xar" />
-        <BehaviorDescription name="behavior" src="logical" xar="behavior.xar" />
-        <BehaviorDescription name="behavior" src="authority" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="consistency" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="creditability" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="freedom" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="inquiry" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="logical" xar="behavior.xar" />
     </BehaviorDescriptions>
     <Dialogs />
     <Resources>
@@ -54,6 +53,7 @@
         <File name="t5_0728_consistency" src="testRawData/t5_0728_consistency.csv" />
         <File name="t6_0803_sourceInq" src="testRawData/t6_0803_sourceInq.csv" />
         <File name="t7_0804_taskInq" src="testRawData/t7_0804_taskInq.csv" />
+        <File name="t8_0812_neutral" src="testRawData/t8_0812_neutral.csv" />
     </Resources>
     <Topics />
     <IgnoredPaths />
